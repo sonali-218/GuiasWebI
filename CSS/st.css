@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* PRIMER APARTADO */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+.logo {
+    width: 100%;
+    height: 720px;
+    display: block;
+}
+
+/* Barrita de navegación por si se quiere saltar alguna parte */
+.navegacion {
+    display: flex;
+    justify-content: center;
+    /*background-color: #cc1d1d;*/
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+    background: #b43a56;
+    background: linear-gradient(90deg,rgba(180, 58, 86, 1) 0%, rgba(222, 38, 38, 1) 50%, rgba(255, 0, 0, 1) 100%);
+}
+
+.navegacion a {
+    margin: 0 30px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.navegacion a,
+.navegacion a:link,
+.navegacion a:visited {
+    color: white;           
+    text-decoration: none;  
+}
+
+.navegacion a:hover {
+    color: #000;              
+    text-shadow: 0 0 10px red; 
+}
+
+/* INTRODUCCIÓN */
+.intro {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.intro h1 {
+    font-family: 'Press Start 2P';
+    color: #e51010;
+    font-size: 25px;
+    text-shadow: 0 0 5px rgb(130, 47, 47);
+    margin-bottom: 15px;
+}
+
+.intro h2, .intro h3 {
+    font-family: 'Press Start 2P';
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 10px;
+    font-style: italic;
+    line-height: 25px;
+}
+
+.intro h2 {
+    margin-top: 30px;
+}
+
+.intro p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.video {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid red;
+    box-shadow: 0 0 25px rgba(255,0,0,0.7);
+}
+
+.video iframe {
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+
+/* SINOPSIS */
+#sinopsis,
+#explicación,
+#personajes, 
+#temporadas, 
+#música,
+#opinión {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  color: #000;                 
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px rgba(255,255,255,0.6); 
+}
+
+.párrafo {
+    color: #000;                   
+    line-height: 1.8;
+    text-align: justify;
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+    background: #e0e0e0;          
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.párrafo::first-letter {
+    font-size: 150%;
+    font-weight: bold;
+    color: #e51010;
+    float: left;
+    line-height: 1;
+}
+
+/* PERSONAJES */
+.personajes {
+  display: flex;
+  flex-wrap: wrap;       
+  justify-content: center; 
+  gap: 20px;              
+  padding: 20px;
+}
+
+.personajes .imagen {
+  background: #e0e0e0;       
+  border-radius: 12px;     
+  text-align: center;
+  padding: 15px;
+  width: 150px;               
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.personajes .imagen:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(229,16,16,0.8);
+}
+
+.personajes .imagen img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;      
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.personajes .imagen p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
+}
+
+/* TEMPORADAS */
+/* Tabla de temporadas */
+.temporadas-tabla {
+  width: 95%;                
+  max-width: 1000px;        
+  margin: 0 auto 40px auto; 
+  border-collapse: collapse;   
+  border-radius: 4px;
+  overflow: hidden;        
+}
+
+.temporadas-tabla th, 
+.temporadas-tabla td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #333; 
+}
+
+.temporadas-tabla th {
+  background-color: #DE2626; 
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* MÚSICA */
+.spotify {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;           
+  width: 100%;
+  max-width: 400px;  
+  margin: 0 auto;        
+}
+
+.spotify iframe {
+  width: 100%;           
+  height: 80px;          
+  border-radius: 10px;   
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* OPINIÓN */
+.texto-opinión {
+    color: #000;                   
+    line-height: 1.8;
+    text-align: justify;
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+    background: #e0e0e0;          
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.texto-opinión::first-letter {
+    font-size: 150%;
+    font-weight: bold;
+    color: #e51010;
+    float: left;
+    line-height: 1;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 15px;
+    color: #555;
+}
+
+/* EXTRA */
+.italicas {
+    font-style: italic;
+}
