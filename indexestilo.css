@@ -91,3 +91,14 @@ footer {
     width: 100%;      
     box-sizing: border-box;
 }
+
+.guia {
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    background: #f1f5f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
