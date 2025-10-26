@@ -1,56 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guías de Alisson Quijano</title>
-    <link rel="stylesheet" href="indexestilo.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Estudiantil</title>
+
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="indexestilo.css" />
 </head>
+
 <body>
-    <div class="main">
-        <h1>Bienvenidos a las guías de Alisson Quijano</h1>
-        <h3>20245233</h3>
-        <h4>Estudiante de Ingeniería de Software y Negocios Digitales</h4>
-        <div class="redesociales">
-            <a href="https://www.linkedin.com/in/alisson-quijano-987708300/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/sonali-218" target="_blank">GitHub</a>
-        </div>
-        <p>Explora una variedad de guías que debo resolver para poner en práctica mis habilidades.</p>
-        
-        <div class="guia">
-            <h3>Guía 1</h3>
-            <ul>
-                <li><a href="HTML/estilos_embebidos.html">Estilos Embebidos</a></li>
-                <li><a href="HTML/ejemplo2.html">Ejemplo 2</a></li>
-                <li><a href="HTML/paises.html">Países de Centroamérica</a></li>
-                <li><a href="HTML/strangerthings.html">Stranger Things</a></li>
-            </ul>
-        </div>
+  <header>
+    <h1>Portafolio Estudiantil - Alisson Quijano</h1>
+    <nav>
+      <ul>
+        <li><a href="#perfil">Perfil</a></li>
+        <li><a href="#materia">Materia</a></li>
+        <li><a href="#guias">Guías</a></li>
+        <li><a href="#foda">FODA</a></li>
+        <li><a href="#contacto">Redes</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <div class="guia">
-            <h3>Guía 2</h3>
-            <ul>
-            <li><a href="20245233_Guia2/pelicula.html">Pelicula</a></li>
-            <li><a href="20245233_Guia2/tablero.html">Tablero de Damas</a></li>
-            <li><a href="20245233_Guia2/biografia.html">Autobiografía</a></li>
-            </ul>
-        </div>
-
-        <div class="guia">
-        <h3>Guía 3</h3>
-            <ul>
-            <li><a href="20245233_Guia3/oscares.html">Premios Oscar</a></li>
-            <li><a href="20245233_Guia3/index.html">Agencia de viajes</a></li>
-            <li><a href="20245233_Guia3/analisis.html">Cartas</a></li>
-            <li><a href="20245233_Guia3/menu_horizontal.html">Menú Horizontal</a></li>
-            </ul>
-        </div>
-
-        <p>¡Próximamente se desbloquearán nuevos proyectos!</p>
+  <section id="perfil" class="section">
+    <h2>Datos Personales</h2>
+    <div class="perfil">
+      <img src="fotopersonal.jpeg" alt="Foto de perfil" />
+      <div class="bio">
+        <p><strong>Nombre:</strong> Alisson Denisse Quijano Guzmán</p>
+        <p><strong>Carnet:</strong> 20245233</p>
+        <p>Soy estudiante de Ingeniería de Software y Negocios Digitales. Tengo 19 años y estoy en el proceso de desarrollar mis habilidades para ser full-stack. Me llama mucho la atención innovar procesos, soy buena realizando trabajos en equipo y me considero una persona totalmente proactiva. </p>
+      </div>
     </div>
-    
-    <footer>
-        &copy; Derechos reservados por AQ - 2025
-    </footer>
+  </section>
+
+  <section id="materia" class="section">
+    <h2>Materia</h2>
+    <p><strong>Curso:</strong> Desarrollo Web I</p>
+    <p><strong>Profesor:</strong> Ing. Guillermo Calderón</p>
+    <p><strong>Descripción:</strong> Este curso cubre los fundamentos básicos de HTML, CSS y JavaScript, lo que permite diseñar sitios web atractivos mediante el uso de los conceptos y la sintaxis básicos, mientras se aprenden las mejores prácticas para seguir creciendo como desarrollador.</p>
+  </section>
+
+  <section id="guias" class="section">
+    <h2>Guías de Ejercicios</h2>
+    <div class="guias-container">
+      <div class="guia">
+        <h3>Guía 1: Introducción y conceptos básicos de HTML y CSS</h3>
+        <p>Identificación de la estructura básica de un documento web aplicando reglas de estilo y utilizando selectores básicos.</p>
+        <a href="20245233_Guia1/ejemplo2.html">Ejemplo 2</a>
+        <a href="20245233_Guia1/estilos_embebidos.html">Estilos embebidos</a>
+        <a href="20245233_Guia1/paises.html">Países</a>
+        <a href="20245233_Guia1/strangerthings.html">Stranger Things</a>
+      </div>
+      <div class="guia">
+        <h3>Guía 2: Selectores CSS avanzados y modelo de caja</h3>
+        <p>Creación de páginas web usando el modelo de caja, conociendo la utilidad de las pseudo-clases y pseudo-elementos.</p>
+        <a href="20245233_Guia2/biografia.html">Biografía</a>
+        <a href="20245233_Guia2/pelicula.html">Película</a>
+        <a href="20245233_Guia2/tablero.html">Tablero</a>
+      </div>
+      <div class="guia">
+        <h3>Guía 3: Posicionamiento, visualización y maquetación de sitios web</h3>
+        <p>Maquetación de sitios web con diseños fijos y fluidos, usando propiedades CSS para la visualización de elementos y diferenciando los distintos tipos de posicionamiento.</p>
+        <a href="20245233_Guia3/analisis.html">Análisis</a>
+        <a href="20245233_Guia3/oscares.html">Oscares</a>
+        <a href="20245233_Guia3/menu_horizontal.html">Menú horizontal</a>
+        <a href="20245233_Guia3/index.html">Viajeros</a>
+      </div>
+      <div class="guia">
+        <h3>Guía 4: Introducción al Responsive Design</h3>
+        <p>Definición necesaria sobre las media queries, usando correctamente la meta-etiqueta viewport y estirilizando formularios utilizando la diversidad de controles de HTML5.</p>
+        <a href="20245233_Guia4/mediaqueries.html">Media queries</a>
+        <a href="20245233_Guia4/index.html">Viajeros</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="foda" class="section">
+    <h2>Análisis FODA</h2>
+    <div class="foda-grid">
+      <div class="foda-item">
+        <h3>Fortalezas</h3>
+        <p>He mejorado mi manejo de HTML y CSS, cuando anteriormente solo podía hacer cosas sin estilo. De igual manera, he logrado aplicar Flexbox estratégicamente para poder visualizar un lindo diseño. Y me ha ayudado a desarrollar mis habilidades en front-end, lo que me deja un paso más cerca del full-stack.</p>
+      </div>
+      <div class="foda-item">
+        <h3>Oportunidades</h3>
+        <p>He aprendido técnicas que podré aplicar en proyectos reales: la documentación del documento, los ID para facilitar el estilo en CSS y la importancia de tener un código estructurado de forma ordenada. Lo cual es importante para mí ya que dentro de poco empiezan las pasantías y esto me da cierta ventaja.</p>
+      </div>
+      <div class="foda-item">
+        <h3>Debilidades</h3>
+        <p>Debo fortalecer mi lógica y análisis de forma general, pero para esta materia más que todo en JavaScript. De cierta manera, debo practicar en mi paciencia cuando un código no me deja de dar errores.</p>
+      </div>
+      <div class="foda-item">
+        <h3>Amenazas</h3>
+        <p>La procrastinación me retrasa un poco al desarrollar una guía y algunos retos técnicos en los que me toca profundizar de manera externa (como cuando me quedan dudas de como aplicar algún concepto).</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section redes">
+    <h2>Conectemos</h2>
+    <p>Sígueme o contáctame en mis redes:</p>
+    <div class="social-links">
+      <a href="mailto:alisson.quijano@gmail.com" class="social-btn"><i class="fa-solid fa-envelope"></i> Correo</a>
+      <a href="https://www.linkedin.com/in/alisson-quijano-987708300/" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://github.com/sonali-218" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Alisson Quijano — Portafolio Estudiantil</p>
+  </footer>
 </body>
 </html>
