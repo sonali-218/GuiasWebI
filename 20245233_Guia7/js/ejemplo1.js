@@ -130,6 +130,12 @@ buttonCrear.onclick = () => {
 
 buttonAddElemento.onclick = () => {
     if (nombreElemento.value != "" && tituloElemento.value != "") {
+
+        if (!validarIdUnico()) {
+            alert("Ya existe un control con ese ID. Debe ingresar otro.");
+            return;
+        }
+
         let elemento = cmbElemento.value;
 
         if (elemento == "select") {
@@ -150,3 +156,47 @@ document.getElementById("idModal").addEventListener("shown.bs.modal", () => {
     nombreElemento.value = "";
     tituloElemento.focus();
 });
+
+
+// -----------------------------------
+// Validar que el ID de los controles nuevos no se repita y muestre un mensaje adecuado
+const validarIdUnico = function () {
+    let idBuscado = `id${nombreElemento.value}`;
+    return document.getElementById(idBuscado) === null;
+};
+
+// Validar la información de los nuevos controles agregados al formulario
+const validarFormulario = function () {
+    let controles = newForm.querySelectorAll("input, select, textarea");
+    let errores = [];
+
+    controles.forEach(ctrl => {
+        if (ctrl.type === "radio") {
+            let grupo = newForm.querySelectorAll(`input[name="${ctrl.name}"]`);
+            let algunoMarcado = [...grupo].some(x => x.checked);
+            if (!algunoMarcado) errores.push(`Debe seleccionar una opción de ${ctrl.name}`);
+        }
+        else if (ctrl.type === "checkbox") {
+            if (!ctrl.checked) errores.push(`Debe marcar la opción: ${ctrl.id}`);
+        }
+        else if (ctrl.tagName === "SELECT") {
+            if (ctrl.value === "") errores.push(`Debe seleccionar una opción del campo ${ctrl.id}`);
+        }
+        else {
+            if (ctrl.value.trim() === "") errores.push(`El campo ${ctrl.id} está vacío`);
+        }
+    });
+
+    if (errores.length > 0) {
+        alert("Errores encontrados:\n\n" + errores.join("\n"));
+    } else {
+        alert("Todo válido. El formulario está completo.");
+    }
+};
+
+document.getElementById("idBtnValidar").onclick = () => {
+    validarFormulario();
+};
+
+// Adicione la creación de tipos de elementos color y email
+addElemento.setAttribute("type", newElemento);
